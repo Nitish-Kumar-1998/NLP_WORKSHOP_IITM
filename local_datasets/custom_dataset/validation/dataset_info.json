@@ -1,0 +1,70 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 1486080,
+  "description": "",
+  "download_checksums": {
+    "D:/VS_CODE/NLP WORKSHOP/NLP_workshop_IIT_Madras/cali_housing.csv": {
+      "num_bytes": 1906094,
+      "checksum": null
+    }
+  },
+  "download_size": 1906094,
+  "features": {
+    "Unnamed: 0": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "MedInc": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "HouseAge": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "AveRooms": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "AveBedrms": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Population": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "AveOccup": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Latitude": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "Longitude": {
+      "dtype": "float64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 3392174,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1486080,
+      "num_examples": 20640,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
