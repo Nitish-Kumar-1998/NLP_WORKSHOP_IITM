@@ -1,0 +1,169 @@
+
+1 point
+Which of the following are correct about BPE tokenization?
+
+It can tokenize a single word into multiple tokens
+
+To build the vocabulary, the algorithm does not need the size of the vocabulary as input.
+
+For merging a pair of tokens, it looks at the frequency of the pair.
+
+None of these.
+1 point
+Why is SoftMax function applied to the logits output by a sequence classification model?
+
+It softens the logits so that they're more reliable.
+
+It applies a lower and upper bound so that they're understandable.
+
+The total sum of the output is then 1, resulting in a possible probabilistic interpretation.
+
+None of these
+1 point
+Is there something wrong with the following code?
+
+1
+from transformers import AutoTokenizer, AutoModel
+2
+​
+3
+tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
+4
+model = AutoModel.from_pretrained("gpt2")
+5
+​
+6
+encoded = tokenizer("Hey!", return_tensors="pt")
+7
+result = model(**encoded)
+
+
+No, it is correct.
+
+The tokenizer and model should always be from the same checkpoint.
+
+It's good practice to pad and truncate with the tokenizer as every input is a batch.
+
+Can not be determined.
+1 point
+What is “transfer learning”?
+
+Transferring the knowledge of a pretrained model to a new model by training it on the same dataset.
+
+Transferring the knowledge of a pretrained model to a new model by initializing the second model with the first model's weights.
+
+Transferring the knowledge of a pretrained model to a new model by building the second model with the same architecture as the first model.
+
+None of these
+1 point
+What is pre-tokenization for a subword tokenizer?
+
+It's the step before the tokenization, where data augmentation (like random masking) is applied.
+
+It's the step before the tokenization, where the desired cleanup operations are applied to the text.
+
+It's the step before the tokenizer model is applied, to split the input into words.
+
+It's the step before the tokenizer model is applied, to split the input into tokens.
+1 point
+Which of the following are necessary to create custom tokenizer?
+
+Vocab size
+
+Tokenizer algorithm
+
+Pre-tokenization step
+
+Normalization
+
+All of these.
+1 point
+Which of the following represent noramlization step in building a tokenizer?
+
+Removing accents from characters.
+
+Converting upper case letters to small case letters.
+
+Assigning integers to tokens.
+
+Splitting a sentence by whitespaces.
+
+It's the final post-processing step where the tokenizer adds the special tokens.
+
+None of these.
+1 point
+When should you train a new tokenizer?
+
+When your dataset is similar to that used by an existing pretrained model, and you want to pretrain a new model
+
+When your dataset is similar to that used by an existing pretrained model, and you want to fine-tune a new model using this pretrained model
+
+When your dataset is different from the one used by an existing pretrained model, and you want to pretrain a new model
+
+When your dataset is different from the one used by an existing pretrained model, but you want to fine-tune a new model using this pretrained model
+
+None of these.
+1 point
+What will the following code return?
+
+1
+from transformers import pipeline
+2
+​
+3
+ner = pipeline("ner", grouped_entities=True)
+4
+ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
+
+
+It will return classification scores for this sentence, with labels "positive" or "negative"
+
+It will return a generated text completing this sentence.
+
+It will return the words representing persons, organizations or locations.
+
+None of these
+1 point
+Is there anything wrong with the code?
+
+1
+from transformers import pipeline
+2
+​
+3
+classifier = pipeline("zero-shot-classification")
+4
+result = classifier("This is a course about the Transformers library")
+
+
+This pipeline requires that labels be given to classify this text.
+
+This pipeline requires several sentences, not just one.
+
+The Hugging Face Transformers library is broken, as usual.
+
+This pipeline requires longer inputs; this one is too short.
+
+None of these
+
+1 point
+What is the benefit of using RAG over relying solely on the internal knowledge of an LLM?
+
+LLMs can now access external data, leading to more accurate and up-to-date responses.
+
+RAG reduces the size of the LLM model.
+
+RAG eliminates the need for prompt engineering.
+
+RAG eliminates the need for vector databases.
+
+1 point
+What is the purpose of prompt engineering in a RAG system?
+
+To improve the performance of the retriever.
+
+To guide the LLM to generate more relevant and accurate responses.
+
+To create vector embeddings.
+
+To optimize the vector database.
